@@ -6,7 +6,7 @@ void atm(int n){
         printf("Widthrawal Approved.");
     }
     else{
-            printf("Enter amount in multiples of 100.");
+            printf("Withdrawal disapproved or enter in a multiple of 100.");
 
 }}
     else{
