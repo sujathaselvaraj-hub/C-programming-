@@ -10,16 +10,19 @@ int factorial(int n){
     }
     for (i=1;i<=n;i++){
         fact= fact * i;
-        sum=sum+fact;
     }
-    printf("The factorial sum is %d", sum);
+   
     
     return fact;
 }
 int main(){
-    int n;
+    int n, sum=0, i;
     printf("Enter number:");
     scanf("%d", &n);
+        for (i=1;i<=n;i++){
+            sum=sum+factorial(i);
+        }
+    printf("The factorial sum is %d", sum);
     factorial(n);
     return 0;
 }
